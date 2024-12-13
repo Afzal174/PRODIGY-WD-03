@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif; /* Changed font to Roboto */
+    box-sizing: border-box;
+}
+
+.background {
+    background-color: #1E1E2F; /* Changed background to a darker shade */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #E0E0E0; /* Updated text color for better contrast */
+}
+
+.title {
+    color: #FFD700; /* Gold for emphasis */
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 1em;
+    text-shadow: 2px 2px 5px #000; /* Added subtle shadow */
+}
+
+.display {
+    color: #B0C4DE; /* Lighter blue-gray */
+    font-size: 26px;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.hide {
+    display: none;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px; /* Increased gap for better spacing */
+    max-width: 320px;
+    max-height: 320px;
+    margin: 10px;
+}
+
+.tile {
+    border: 2px solid #FFD700; /* Gold border for better visibility */
+    background-color: #33334D; /* Darker tile background */
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    cursor: pointer;
+    border-radius: 8px; /* Rounded corners */
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.tile:hover {
+    background-color: #44446E; /* Highlight on hover */
+    transform: scale(1.05); /* Subtle zoom effect */
+}
+
+.playerX {
+    color: #32CD32; /* Bright green for Player X */
+}
+
+.playerO {
+    color: #1E90FF; /* Bright blue for Player O */
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.controls button {
+    color: white;
+    background-color: #FF6347; /* Softer red */
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.controls button:hover {
+    background-color: #FF4500; /* Darker red on hover */
+}
+
+.restart {
+    background-color: #1E90FF; /* Updated Restart button color */
+}
+
+#reset {
+    background-color: #FF6347; /* Reset button consistent with controls */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    font-size: 18px;
+    margin-left: 1cm;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#reset:hover {
+    background-color: #FF4500;
+}
